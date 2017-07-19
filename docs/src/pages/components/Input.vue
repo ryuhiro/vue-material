@@ -624,6 +624,29 @@
             </code-block>
           </div>
         </example-box>
+
+        <example-box card-title="Currency">
+          <div slot="demo">
+            <form novalidate @submit.stop.prevent="submit">
+              <md-input-container md-theme="green">
+                <label>Currency</label>
+                <md-currency v-model="price">{{ price }}</md-currency>
+              </md-input-container>
+            </form>
+          </div>
+
+          <div slot="code">
+            <code-block lang="xml">
+              &lt;form novalidate @submit.stop.prevent=&quot;submit&quot;&gt;
+                &lt;md-input-container md-theme=&quot;green&quot;&gt;
+                  &lt;label&gt;Currency&lt;/label&gt;
+                  &lt;md-currency v-model=&quot;price&quot;&gt;&lt;/md-currency&gt;
+                &lt;/md-input-container&gt;
+              &lt;/form&gt;
+            </code-block>
+          </div>
+        </example-box>
+
       </div>
     </docs-component>
   </page-content>
@@ -638,6 +661,7 @@
     data() {
       return {
         autocompleteValue: '',
+        price: '1234567',
         initialValue: 'My initial value',
         listAutocomplete: [
           {name: 'oi'},

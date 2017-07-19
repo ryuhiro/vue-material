@@ -40,6 +40,7 @@
     "release": "bash build/release.sh"
   },
   "dependencies": {
+    "accounting-js": "^1.1.1",
     "vue": "^2.3.3"
   },
   "devDependencies": {
